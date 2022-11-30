@@ -20,7 +20,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            flake8 –-exclude=venv/* --statistics
+            flake8 
             pytest --junitxml=test-results/junit.xml
       - store_test_results:
           path: test-results
